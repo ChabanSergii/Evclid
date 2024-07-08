@@ -86,7 +86,7 @@ a:visited {
     color: #000000;
 }
 
-/* Header */
+/* Header 1920px*/
 .burger {
     display: none;
 }
@@ -105,6 +105,11 @@ a:visited {
     border-bottom-left-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-logo {
+    width: 225px;
+    height: 72px;
 }
 
 .header-container,
@@ -178,7 +183,7 @@ a:visited {
     outline: 2px solid #FF9900;
 }
 
-/* Hero */
+/* Hero 1920px*/
 .section-hero-backgraund {
     color: #FFFFFF;
     border-radius: var(--border-radius);
@@ -207,7 +212,7 @@ a:visited {
     line-height: 29.26px;
 }
 
-/* About */
+/* About 1920px */
 .section-about {
     margin-bottom: 100px;
 }
@@ -224,7 +229,7 @@ a:visited {
 
 .section-about-big {
     min-width: 49%;
-    min-height: 622px;
+    height: 622px;
     position: relative;
     background-image: url('/img/Rectangle_2.png');
     background-repeat: no-repeat;
@@ -275,7 +280,7 @@ a:visited {
 
 .section-about-small {
     max-width: 100%;
-    min-height: 622px;
+    height: 622px;
     margin-left: 32px;
     justify-content: space-between;
     box-sizing: border-box;
@@ -286,14 +291,11 @@ a:visited {
 }
 
 .section-about-elem {
-    min-height: 295px;
-    box-sizing: content-box;
+    height: 295px;
+    box-sizing: border-box;
     border: 1px solid #CACACA;
     border-radius: var(--border-radius);
-}
-
-.section-about-elem-container {
-    margin: 65px 120px 65px 300px;
+    padding: 65px 120px 65px 300px;
 }
 
 .frame16,
@@ -318,7 +320,7 @@ a:visited {
     color: #000000;
 }
 
-/* How */
+/* How 1920px */
 .section-how {
     margin-bottom: 100px;
 }
@@ -331,7 +333,6 @@ a:visited {
 
 .section-how-item {
     display: inline;
-/*     margin-top: 50px; */
     margin-right: 85px;
     font-size: 18px;
     font-weight: 400;
@@ -359,7 +360,7 @@ a:visited {
 }
 
 .section-how-container {
-    min-height: 460px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -395,7 +396,7 @@ a:visited {
     color: #FFFFFF;
 }
 
-/* Faq */
+/* Faq 1920px */
 .section-faq-list {
     padding-left: 0;
     margin: 0;
@@ -443,11 +444,11 @@ a:visited {
     transition-timing-function: linear;
 }
 
-/* Footer */
-
+/* Footer 1920px */
 .footer {
     background: #000000;
 }
+
 .footer-container {
     min-height: 594px;
     margin-top: 100px;
@@ -508,7 +509,6 @@ a:visited {
 .footer-center {
     margin-left: 45px;
     margin-right: 45px;
-    min-height: 494px;
 }
 
 .footer-form {
@@ -520,6 +520,7 @@ a:visited {
 }
 
 .footer-input {
+    box-sizing: border-box;
     width: 100%;
     height: 60px;
     margin-bottom: 25px;
@@ -573,7 +574,12 @@ a:visited {
         margin-right: 50px;
     }
 
-    /* Header */
+    /* Header 1024px */
+    .header-logo {
+        width: 150px;
+        height: 48px;
+    }
+
     .header-nav {
         display: none;
     }
@@ -586,7 +592,7 @@ a:visited {
         margin-left: 0;
     }
 
-    /* Hero */
+    /* Hero 1024px */
     .title {
         margin-bottom: 16px;
     }
@@ -617,7 +623,7 @@ a:visited {
         background-size: cover;
     }
 
-    /* About */
+    /* About 1024px */
     .section-about-description-main {
         padding-right: 0;
     }
@@ -629,18 +635,24 @@ a:visited {
 
     .section-about-big {
         width: 100%;
-        min-height: 640px;
+        height: 640px;
         margin-bottom: 32px;
+    }
+
+    .section-about-description-big {
+        margin: 34px 40px;
     }
 
     .section-about-small {
         width: 100%;
         margin-left: 0;
-        min-height: 640px;
+        height: 640px;
     }
 
-    .section-about-elem-container {
-        margin: 65px 155px 65px 317px;
+    .section-about-elem {
+        height: 295px;
+        padding: 65px 155px 65px 317px;
+        box-sizing: border-box;
     }
 
     .section-about-description-small {
@@ -652,7 +664,7 @@ a:visited {
         background-position: 77px 65px;
     }
     
-    /* How */
+    /* How 1024px */
     .section-how {
         margin-bottom: 80px;
     }
@@ -674,7 +686,7 @@ a:visited {
         max-width: 47%;
     }
 
-    /* Faq */
+    /* Faq 1024px */
     .section-faq-list {
         margin-top: 32px;
     }
@@ -697,19 +709,148 @@ a:visited {
         transition-timing-function: ease-in-out;
     }
 
-    /* Footer */
+    /* Footer 1024px */
     .footer-right {
         display: none;
     }
 
     .footer-center {
+        width: 541px;
         margin-left: auto;
-        margin-right: 25px;
-        min-height: 494px;
+        margin-right: 0;
     }
     
     .footer-form {
         width: 541px;
     }
 
+    .footer-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+
+    /* Hero 768px */
+    .section-hero-block {
+        padding: 160px 40px 160px 40px;
+    }
+
+    .section-hero-title {
+        margin-bottom: 24px;
+        font-size: 50px;
+        line-height: 60.95px;
+    }
+    
+    .section-hero-backgraund {
+        background-image: url('/img/hero-img-768.png');
+        background-size: 100% 100%;
+    }
+
+    .section-hero-description {
+        margin-right: 0;
+        font-size: 18px;
+        line-height: 21.94px;
+        font-weight: 700px;
+    }
+
+    /* About 768px */
+    .section-about {
+        margin-bottom: 80px;
+    }
+
+    .section-about-big {
+        width: 100%;
+        height: 650px;
+        min-height: 640px;
+        margin-bottom: 32px;
+        background-image: url('/img/worker\ 768.png');
+    }
+
+    .section-about-btn {
+        margin-right: 40px;
+        margin-left: 35px;
+        width: 175px;
+    }
+
+    .section-about-small {
+        width: 100%;
+        margin-left: 0;
+        height: 502px !important;
+    }
+
+    .section-about-elem {
+        height: 235px;
+        padding: 35px 48px;
+        padding-left: 170px;
+        /* box-sizing: border-box; */
+    }
+
+    .section-about-description-small {
+        padding-right: 30px;
+    }
+
+    .frame16,
+    .frame12 {
+        background-position: 40px center;
+        background-size: 114px 99px;
+    }
+    
+    /* How 768px */
+    .section-how-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .section-how-item {
+        margin-right: 0;
+    }
+
+    .section-how-container {
+        min-height: 100%;
+        padding-top: 284px;
+        display: block;
+        background-image: url('/img/how-1-798.png');
+        background-size: 100% 284px;
+    }
+
+    .title-small {
+        margin-top: 0;
+    }
+
+    .section-how-text {
+        max-width: 100%;
+        margin-top: 8px;
+    }
+
+    .section-how-btn-set {
+        margin-top: 25px;
+    }
+
+    /* Footer 768px */
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer-center {
+        margin-left: 0;
+        order: 1;
+    }
+
+    .footer-left {
+        min-height: auto;
+        margin-top: 50px;
+        order: 2;
+        display: block;
+    }
+
+    .footer-list {
+        display: none;
+    }
 }
