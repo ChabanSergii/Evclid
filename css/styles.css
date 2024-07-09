@@ -4,12 +4,40 @@
     --btn-small-radius: 3px;
 }
 
-html {
-    background-color: #CACACA;
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Black.woff2") format("woff2"), url("/fonts/Montserrat-Black.woff") format("woff");
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("/fonts/Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #FFFFFF;
     margin: 0 auto;
     max-width: 1920px;
@@ -184,6 +212,10 @@ a:visited {
 }
 
 /* Hero 1920px*/
+.section-hero {
+    margin-top: 50px;
+}
+
 .section-hero-backgraund {
     color: #FFFFFF;
     border-radius: var(--border-radius);
@@ -194,11 +226,11 @@ a:visited {
 
 .section-hero-block {
     height: 100%;
-    margin-top: 50px;
-    padding: 100px 853px 100px 80px;
+    padding: 100px 80px;
 }
 
 .section-hero-title {
+    max-width: 55%;
     margin-bottom: 24px;
     font-weight: 800;
     font-size: 70px;
@@ -206,6 +238,7 @@ a:visited {
 }
 
 .section-hero-description {
+    max-width: 50%;
     margin-bottom: 90px;
     font-weight: 700;
     font-size: 24px;
@@ -563,6 +596,35 @@ a:visited {
     max-width: 363px;
     max-height: 320px;   
 }
+
+/* @media (max-width: 1400px) {
+    .header-logo {
+        width: 150px;
+        height: 48px;
+    }
+
+    
+}
+ */
+
+
+/* @media (max-width: 1790px) {
+    .section-about-block {
+        display: block;
+    }
+
+    .section-about-small {
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section-about-elem {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-right: 65px;
+    }
+} */
 
 @media (max-width: 1024px) {
     body {
