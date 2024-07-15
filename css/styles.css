@@ -62,6 +62,7 @@ img {
 a {
     cursor: pointer;
     text-decoration: none;
+    color: currentColor;
 }
 
 a:visited {
@@ -224,7 +225,7 @@ a:visited {
 .section-hero-backgraund {
     color: #FFFFFF;
     border-radius: var(--border-radius);
-    background-image: url('/img/low-angle-photo-of-balconies-2462015\ 1.png');
+    background-image: url('/img/hero-img.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -269,7 +270,7 @@ a:visited {
     min-width: 49%;
     height: 622px;
     position: relative;
-    background-image: url('/img/Rectangle_2.png');
+    background-image: url('/img/worker.png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: var(--border-radius);
@@ -363,6 +364,11 @@ a:visited {
     margin-bottom: 100px;
 }
 
+.section-how-description {
+    margin: 8px 0;
+    max-width: 758px;
+}
+
 .section-how-list {
     padding-left: 0;
     margin-top: 45px;
@@ -399,13 +405,28 @@ a:visited {
 
 .section-how-container {
     height: 460px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url('/img/Rectangle18.png');
+    margin-bottom: 15px;
+    display: none;
+    position: relative;
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 50% auto;
+    background-size: 50% 100%;
+}
+
+.section-how-step-1 {
+    background-image: url('/img/step-1.png');
+}
+
+.section-how-step-2 {
+    background-image: url('/img/step-2.png');
+}
+
+.section-how-step-3 {
+    background-image: url('/img/step-3.png');
+}
+
+.section-how-step-4 {
+    background-image: url('/img/step-4.png');
 }
 
 .section-how-text {
@@ -434,8 +455,19 @@ a:visited {
     color: #FFFFFF;
 }
 
+.section-how-btn-set {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 .section-about-mobile {
     display: none;
+}
+
+.section-how-container:target {
+    display: block;
+    outline: none;
 }
 
 /* Faq 1920px */
@@ -622,32 +654,6 @@ a:visited {
     color: #FFF;
 }
 
-/* @media (max-width: 1400px) {
-    .header-logo {
-        width: 150px;
-        height: 48px;
-    }
-}
- */
-
-/* @media (max-width: 1790px) {
-    .section-about-block {
-        display: block;
-    }
-
-    .section-about-small {
-        margin-left: 0;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .section-about-elem {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding-right: 65px;
-    }
-} */
-
 @media (max-width: 1024px) {
     body {
         max-width: 1024px;
@@ -760,10 +766,25 @@ a:visited {
 
     .section-how-container {
         min-height: 689px;
-        background-image: url('/img/Rectangle\ 18\ 1024.png');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: 437px 100%;
+    }
+
+    .section-how-step-1 {
+        background-image: url('/img/step-1-1024.png');
+    }
+    
+    .section-how-step-2 {
+        background-image: url('/img/step-2-1024.png');
+    }
+    
+    .section-how-step-3 {
+        background-image: url('/img/step-3-1024.png');
+    }
+    
+    .section-how-step-4 {
+        background-image: url('/img/step-4-1024.png');
     }
 
     .section-how-text {
@@ -851,7 +872,7 @@ a:visited {
         height: 650px;
         min-height: 640px;
         margin-bottom: 32px;
-        background-image: url('/img/worker\ 768.png');
+        background-image: url('/img/worker-768.png');
     }
 
     .section-about-btn {
@@ -897,8 +918,23 @@ a:visited {
         min-height: 100%;
         padding-top: 284px;
         display: block;
-        background-image: url('/img/how-1-798.png');
         background-size: 100% 284px;
+    }
+
+    .section-how-step-1 {
+        background-image: url('/img/step-1-798.png');
+    }
+    
+    .section-how-step-2 {
+        background-image: url('/img/step-2-798.png');
+    }
+    
+    .section-how-step-3 {
+        background-image: url('/img/step-3-798.png');
+    }
+    
+    .section-how-step-4 {
+        background-image: url('/img/step-4-798.png');
     }
 
     .title-small {
@@ -965,6 +1001,10 @@ a:visited {
     }
 
     /* Hero 320px */
+    .section-hero-backgraund {
+        background-image: url('/img/hero-img-320.png');
+    }
+
     .section-hero {
         margin-top: 30px;
     }
@@ -1103,10 +1143,25 @@ a:visited {
 
     .section-how-container {
         height: auto;
-        background-image: url('/img/how-1-320.png');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: 290px 160px;
+    }
+
+    .section-how-step-1 {
+        background-image: url('/img/step-1-320.png');
+    }
+    
+    .section-how-step-2 {
+        background-image: url('/img/step-2-320.png');
+    }
+    
+    .section-how-step-3 {
+        background-image: url('/img/step-3-320.png');
+    }
+    
+    .section-how-step-4 {
+        background-image: url('/img/step-4-320.png');
     }
 
     .section-how-btn-set{

@@ -71,7 +71,7 @@
             <form action="https://jsonplaceholder.typicode.com/posts" method="get">
                 <label for="site-search"></label>
                 <input type="search" id="site-search" name="search" style="display: none;">
-                <button aria-label="search" class="header-search">
+                <button aria-label="search" class="header-search" type="submit">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="black"/>
                         <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
@@ -157,35 +157,72 @@
         <section class="section-how">
             <div class="container">
                 <h2 class="title" tabindex="0">Как мы работаем</h2>
-                <ul class="section-how-list">
-                    <li class="section-how-item">
-                        <a href="" class="section-how-step" aria-label="первый шаг">1 шаг</a>
-                    </li>
-                    <li class="section-how-item">
-                        <a href="" class="section-how-step" aria-label="второй шаг">2 шаг</a>
-                    </li>
-                    <li class="section-how-item">
-                        <a href="" class="section-how-step" aria-label="третий шаг">3 шаг</a>
-                    </li>
-                    <li class="section-how-item">
-                        <a href="" class="section-how-step" aria-label="четвертый шаг">4 шаг</a>
-                    </li>
-                </ul>
-                <div class="section-how-container" tabindex="0">
-                    <h3 class="title-small">Проводим консультацию</h3>
-                    <div class="section-how-text">
-                        <p class="description" style="margin: 0;">
-                            Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. 
-                        </p>
-                        <p class="description" style="margin: 0;">
-                            А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
-                        </p>
+
+                <nav class="section-how-list">
+                    <a href="#step-1" class="section-how-step section-how-item" aria-label="первый шаг">1 шаг</a>
+                    <a href="#step-2" class="section-how-step section-how-item" aria-label="второй шаг">2 шаг</a>
+                    <a href="#step-3" class="section-how-step section-how-item" aria-label="третий шаг">3 шаг</a>
+                    <a href="#step-4" class="section-how-step section-how-item" aria-label="четвертый шаг">4 шаг</a>
+                </nav>
+
+                <div class="section-how-tab">
+                    <div id="step-1" class="section-how-container section-how-step-1" tabindex="0">
+                        <h3 class="title-small">Проводим консультацию</h3>
+                        <div class="section-how-text">
+                            <p class="description section-how-description">
+                                Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. 
+                            </p>
+                            <p class="description section-how-description">
+                                А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+                            </p>
+                        </div>
+                        <div class="section-how-btn-set">
+                            <button class="btn col-bla">Подробнее</button>
+                            <button class="btn section-how-btn">Договор</button>
+                        </div>
                     </div>
-                    <div class="section-how-btn-set">
-                        <button class="btn col-bla">Подробнее</button>
-                        <button class="btn section-how-btn">Договор</button>
+
+                    <div id="step-2" class="section-how-container section-how-step-2" tabindex="0">
+                        <h3 class="title-small">Составляем смету</h3>
+                        <div class="section-how-text">
+                            <p class="description section-how-description">
+                                Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                            </p>
+                        </div>
+                        <div class="section-how-btn-set">
+                            <button class="btn col-bla">Подробнее</button>
+                            <button class="btn section-how-btn">Договор</button>
+                        </div>
+                    </div>
+
+                    <div id="step-3" class="section-how-container section-how-step-3" tabindex="0">
+                        <h3 class="title-small">Привлекаем подрядчиков</h3>
+                        <div class="section-how-text">
+                            <p class="description section-how-description">
+                                Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+                            </p>
+                        </div>
+                        <div class="section-how-btn-set">
+                            <button class="btn col-bla">Подробнее</button>
+                            <button class="btn section-how-btn">Договор</button>
+                        </div>
+                    </div>
+
+                    <div id="step-4" class="section-how-container section-how-step-4" tabindex="0">
+                        <h3 class="title-small">Инспектируем все этапы работ</h3>
+                        <div class="section-how-text">
+                            <p class="description section-how-description">
+                                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит 
+                                о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+                            </p>
+                        </div>
+                        <div class="section-how-btn-set">
+                            <button class="btn col-bla">Подробнее</button>
+                            <button class="btn section-how-btn">Договор</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -302,7 +339,7 @@
                         <input type="email" name="email" id="email" class="footer-input" placeholder="Email*" required>
                         <label for="message" aria-label="text area"></label>
                         <textarea name="message" id="message" class="footer-input footer-input-last" placeholder="Сообщение"></textarea>
-                        <button class="btn footer-btn">Отправить данные</button>
+                        <button class="btn footer-btn" type="post">Отправить данные</button>
                     </form>
                 </div>
                 <div class="footer-right">
