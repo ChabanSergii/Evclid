@@ -163,6 +163,7 @@ a:visited {
 
 .header-item{
     margin-left: 85px;
+    text-wrap: nowrap;
 }
 
 .header-item:last-child {
@@ -222,12 +223,31 @@ a:visited {
     margin-top: 50px;
 }
 
+.swiper {
+    margin: 75px;
+}
+
 .section-hero-backgraund {
     color: #FFFFFF;
     border-radius: var(--border-radius);
     background-image: url('/img/hero-img.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.swiper-slide-2 {
+    background-image: url('/img/hero-img-2.png');
+}
+
+.swiper-slide-3 {
+    background-image: url('/img/hero-img-3.png');
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 7.5px !important;
+    background-color: #FFF;
 }
 
 .section-hero-block {

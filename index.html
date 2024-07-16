@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Эвклид</title>
     <link rel="stylesheet" href="/css/normalize.css">
+
+    
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- swiperslider -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -82,18 +90,46 @@
     </header>
 
     <main>
-        <section class="section-hero">
-            <div class="container section-hero-backgraund" tabindex="0">
-                <div class="section-hero-backgraund">
-                    <div class="section-hero-block">
-                        <h1 class="section-hero-title">Проектные решения любой сложности</h1>
-                        <p class="section-hero-description">
-                            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-                        </p>
-                        <button class="btn">Заказать расчёт</button>
-                    </div>
+        <section class="section-hero container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                   <!-- Slides 1 -->
+                  <div class="swiper-slide section-hero-backgraund">
+                        <div class="section-hero-block">
+                            <h1 class="section-hero-title">Проектные решения любой сложности</h1>
+                            <p class="section-hero-description">
+                                Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                            </p>
+                            <button class="btn">Заказать расчёт</button>
+                        </div>
+                  </div>
+                  <!-- Slides 2 -->
+                  <div class="swiper-slide section-hero-backgraund swiper-slide-2">
+                        <div class="section-hero-block">
+                            <h1 class="section-hero-title">Проектные решения любой сложности</h1>
+                            <p class="section-hero-description">
+                                Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                            </p>
+                            <button class="btn">Заказать расчёт</button>
+                        </div>
+                  </div>
+                  <!-- Slides 3 -->
+                  <div class="swiper-slide section-hero-backgraund swiper-slide-3">
+                        <div class="section-hero-block">
+                            <h1 class="section-hero-title">Проектные решения любой сложности</h1>
+                            <p class="section-hero-description">
+                                Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                            </p>
+                            <button class="btn">Заказать расчёт</button>
+                        </div>
+                  </div>
                 </div>
-            </div>
+                <!-- Slider settings -->
+                <div class="swiper-pagination"></div>
+              </div>
+
         </section>
 
         <section class="section-about">
@@ -350,5 +386,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="/initial.js"></script>
+    
 </body>
 </html>
