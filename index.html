@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Эвклид</title>
     <link rel="stylesheet" href="/css/normalize.css">
-
     
-    <link rel="stylesheet" href="/css/styles.css">
     <!-- swiperslider -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- jqueryui  accordion -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script>
+        $( function() {
+          $( "#accordion" ).accordion({
+            active: 0,
+            animate: {
+              duration: 500,
+            },
+            collapsible: true,
+            icons: false,
+          });
+        });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -94,8 +111,7 @@
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
-                   <!-- Slides 1 -->
+                    <!-- Slides 1 -->
                   <div class="swiper-slide section-hero-backgraund">
                         <div class="section-hero-block">
                             <h1 class="section-hero-title">Проектные решения любой сложности</h1>
@@ -262,7 +278,7 @@
             </div>
         </section>
 
-        <section class="section-faq">
+        <!-- <section class="section-faq">
             <div class="container">
                 <h2 class="title" tabindex="0">Часто задаваемые вопросы</h2>
                 <ul class="section-faq-list" aria-label="faq">      
@@ -287,6 +303,87 @@
                         <img src="/img/faq svg.svg" alt="button details" class="faq-svg">
                     </li>
                 </ul>
+            </div>
+        </section> -->
+
+        <section class="section-faq">
+            <div class="container">
+                <h2 class="title">Часто задаваемые вопросы</h2>
+                <div id="accordion" aria-label="faq">
+    
+                    <h3 class="section-faq-text">
+                      <span class="section-faq-txt">Из чего формируется конечная стоимость проекта?</span>
+                      <span class="section-faq-icon">
+                        <!-- <img src="/img/faq svg.svg" alt=""> -->
+                      </span>
+                    </h3>
+                    <div>
+                      <p class="description">
+                        Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас 
+                        к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. 
+                        Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                      </p>
+                      <p class="description">
+                        Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определённых слоёв населения, 
+                        а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, 
+                        а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.
+                      </p>
+                    </div>
+    
+                    <h3 class="section-faq-text">
+                      <span class="section-faq-txt">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</span>
+                      <span class="section-faq-icon ui-accordion-header-icon">
+                        <!-- <img src="/img/faq svg.svg" alt=""> -->
+                      </span>
+                    </h3>
+                    <div>
+                      <p class="description">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Обеспечивает большой путь знаках они деревни послушавшись, власти курсивных. Большого даже большой ipsum текстами необходимыми единственное вопроса образ жаренные однажды!
+                      </p>
+                    </div>
+    
+                    <h3 class="section-faq-text">
+                      <span class="section-faq-txt">Я выбираю между разными компаниями. В чём ваше отличие?</span>
+                      <span class="section-faq-icon">
+                        <!-- <img src="/img/faq svg.svg" alt=""> -->
+                      </span>
+                    </h3>
+                    <div>
+                      <p class="description">
+                      Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Меня агентство вдали сбить одна предложения последний маленький, коварный приставка от всех подпоясал собрал своего точках текстами рот пустился дорогу пояс?
+                      Своих если не щеке алфавит пор первую заголовок повстречался, заглавных, рукопись переписали, коварных лучше домах! Мир буквоград залетают безопасную собрал запятой текста. Большого прямо собрал они курсивных языком алфавит точках.
+                      </p>
+                    </div>
+    
+                    <h3 class="section-faq-text">
+                      <span class="section-faq-txt">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</span>
+                      <span class="section-faq-icon">
+                        <!-- <img src="/img/faq svg.svg" alt=""> -->
+                      </span>
+                    </h3>
+                    <div>
+                      <p class="description">
+                      Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Власти послушавшись своих если он, проектах своего взобравшись, за вдали большой рекламных что не агентство точках по всей диких грамматики ведущими.
+                      Составитель безорфографичный запятых залетают своего эта речью ему собрал семь жаренные переписали грамматики, lorem что пояс строчка маленькая решила взобравшись над, своих переулка большого возвращайся ipsum послушавшись предупреждал власти! Сих.
+                      Запятых продолжил выйти пустился! Ты власти речью образ, строчка, свою большой дороге продолжил взобравшись рукописи языком он своих осталось эта. Они, проектах своих страна продолжил пунктуация ты все оксмокс осталось.
+                      </p>
+                    </div>
+    
+                    <h3 class="section-faq-text">
+                      <span class="section-faq-txt">Могу ли я вернуть деньги на каком-либо из этапов работ?</span>
+                      <span class="section-faq-icon">
+                        <!-- <img src="/img/faq svg.svg" alt=""> -->
+                      </span>
+                    </h3>
+                    <div>
+                      <p class="description">
+                      Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Переулка переписывается деревни курсивных его, продолжил правилами подзаголовок путь. Строчка назад сбить приставка текстов продолжил коварных использовало запятых бросил что!
+                      </p>
+                      <p class="description">
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. О выйти предупреждал агентство подпоясал, семантика, которое парадигматическая путь точках переулка образ ее рукописи, даже необходимыми первую? Ты, вопроса ему.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -388,6 +485,6 @@
     </main>
 
     <script src="/initial.js"></script>
-    
+
 </body>
 </html>

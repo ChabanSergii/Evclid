@@ -223,10 +223,6 @@ a:visited {
     margin-top: 50px;
 }
 
-.swiper {
-    margin: 75px;
-}
-
 .section-hero-backgraund {
     color: #FFFFFF;
     border-radius: var(--border-radius);
@@ -491,51 +487,78 @@ a:visited {
 }
 
 /* Faq 1920px */
+.ui-accordion {
+    margin: 0;
+  }
+
 .section-faq-list {
     padding-left: 0;
     margin: 0;
 }
 
-.section-faq-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 24px;
+.ui-accordion .ui-accordion-header {
+    margin: 4px 0;
+    padding: 39px 0;
+    color: black;
     font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-    border-top: 1px solid #CACACA;
+    font-size: 24px;
+    background-color: #fff;
+    border-top: 1px solid gray;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    
 }
 
-.section-faq-item:last-child {
-    border-bottom: 1px solid #CACACA;
+.ui-accordion .ui-accordion-header:focus {
+    outline: none;
 }
 
-.section-faq-item:hover {
-    border-top: 1px solid #FF9900;
+.ui-accordion .ui-accordion-header-collapsed:focus {
+ /*    outline: none; */
+    border-top: 1px solid #E1670E;
+    border-bottom: 1px solid #E1670E;
+    color: #E1670E;
+}
+
+.ui-accordion .ui-accordion-header-collapsed {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.ui-accordion .ui-accordion-header-collapsed:hover {
     color: #FF9900;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
-}
-
-.section-faq-item:hover + .section-faq-item {
     border-top: 1px solid #FF9900;
-}
-
-.section-faq-item:hover:last-child {
     border-bottom: 1px solid #FF9900;
 }
 
-.faq-svg {
-    cursor: pointer;
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid gray;
 }
 
-.faq-svg:active {
-    transform: rotate(90deg);
+.section-faq-text {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-faq-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url('/img/faq\ svg.svg');
+}
+
+.section-faq-icon:active {
+    transform: rotate(-30deg);
     transition-duration: 0.2s;
     transition-timing-function: linear;
+}
+
+.section-faq-icon:focus {
+    background-image: url('/img/faq-x.svg');
 }
 
 /* Footer 1920px */
@@ -1217,6 +1240,7 @@ a:visited {
         font-style: 14px;
         font-weight: 500;
         line-height: 24px;
+        background-color: #FFF;
     }
 
     .faq-svg {

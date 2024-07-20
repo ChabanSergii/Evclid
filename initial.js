@@ -14,3 +14,16 @@ const swiper = new Swiper('.swiper', {
     },
 
     });
+
+/* Faq jqueryui accordion */
+
+/* $( function() {
+    $( "#accordion" ).accordion({
+      active: 0,
+      animate: {
+        duration: 500,
+      },
+      collapsible: true,
+      icons: false,
+    });
+  }); */
