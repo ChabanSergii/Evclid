@@ -12,12 +12,22 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    
+});
 
-    });
+
+/* How jqueryui tabs */  
+$( function() {
+$( "#tabs" ).tabs({
+    event: "mouseover",
+    active: 0,
+    heightStyle: "auto",
+});
+} );
+
 
 /* Faq jqueryui accordion */
-
-/* $( function() {
+$( function() {
     $( "#accordion" ).accordion({
       active: 0,
       animate: {
@@ -26,4 +36,4 @@ const swiper = new Swiper('.swiper', {
       collapsible: true,
       icons: false,
     });
-  }); */
+  });

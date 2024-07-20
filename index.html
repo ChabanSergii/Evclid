@@ -18,19 +18,9 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
     <link rel="stylesheet" href="/css/styles.css">
-    <script>
-        $( function() {
-          $( "#accordion" ).accordion({
-            active: 0,
-            animate: {
-              duration: 500,
-            },
-            collapsible: true,
-            icons: false,
-          });
-        });
-    </script>
+  
 </head>
 <body>
     <header class="header">
@@ -210,17 +200,16 @@
             <div class="container">
                 <h2 class="title" tabindex="0">Как мы работаем</h2>
 
-                <nav class="section-how-list">
-                    <a href="#step-1" class="section-how-step section-how-item" aria-label="первый шаг">1 шаг</a>
-                    <a href="#step-2" class="section-how-step section-how-item" aria-label="второй шаг">2 шаг</a>
-                    <a href="#step-3" class="section-how-step section-how-item" aria-label="третий шаг">3 шаг</a>
-                    <a href="#step-4" class="section-how-step section-how-item" aria-label="четвертый шаг">4 шаг</a>
-                </nav>
-
-                <div class="section-how-tab">
-                    <div id="step-1" class="section-how-container section-how-step-1" tabindex="0">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1" aria-label="первый шаг">1 шаг</a></li>
+                        <li><a href="#tabs-2" aria-label="второй шаг">2 шаг</a></li>
+                        <li><a href="#tabs-3" aria-label="третий шаг">3 шаг</a></li>
+                        <li><a href="#tabs-4" aria-label="четвертый шаг">4 шаг</a></li>
+                    </ul>
+                    <div id="tabs-1" class="section-how-step-1">
                         <h3 class="title-small">Проводим консультацию</h3>
-                        <div class="section-how-text">
+                        <div>
                             <p class="description section-how-description">
                                 Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. 
                             </p>
@@ -228,39 +217,36 @@
                                 А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
                             </p>
                         </div>
-                        <div class="section-how-btn-set">
+                        <div>
                             <button class="btn col-bla">Подробнее</button>
                             <button class="btn section-how-btn">Договор</button>
                         </div>
                     </div>
-
-                    <div id="step-2" class="section-how-container section-how-step-2" tabindex="0">
+                    <div id="tabs-2" class="section-how-step-2">
                         <h3 class="title-small">Составляем смету</h3>
                         <div class="section-how-text">
                             <p class="description section-how-description">
                                 Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
                             </p>
                         </div>
-                        <div class="section-how-btn-set">
+                        <div>
                             <button class="btn col-bla">Подробнее</button>
                             <button class="btn section-how-btn">Договор</button>
                         </div>
                     </div>
-
-                    <div id="step-3" class="section-how-container section-how-step-3" tabindex="0">
+                    <div id="tabs-3" class="section-how-step-3">
                         <h3 class="title-small">Привлекаем подрядчиков</h3>
                         <div class="section-how-text">
                             <p class="description section-how-description">
                                 Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
                             </p>
                         </div>
-                        <div class="section-how-btn-set">
+                        <div>
                             <button class="btn col-bla">Подробнее</button>
                             <button class="btn section-how-btn">Договор</button>
                         </div>
                     </div>
-
-                    <div id="step-4" class="section-how-container section-how-step-4" tabindex="0">
+                    <div id="tabs-4" class="section-how-step-4">
                         <h3 class="title-small">Инспектируем все этапы работ</h3>
                         <div class="section-how-text">
                             <p class="description section-how-description">
@@ -268,43 +254,14 @@
                                 о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
                             </p>
                         </div>
-                        <div class="section-how-btn-set">
+                        <div>
                             <button class="btn col-bla">Подробнее</button>
                             <button class="btn section-how-btn">Договор</button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
-        <!-- <section class="section-faq">
-            <div class="container">
-                <h2 class="title" tabindex="0">Часто задаваемые вопросы</h2>
-                <ul class="section-faq-list" aria-label="faq">      
-                    <li class="section-faq-item" aria-label="faq-item" tabindex="0">
-                        <small class="section-faq-text">Из чего формируется конечная стоимость проекта?</small>
-                        <img src="/img/faq svg.svg" alt="button details" class="faq-svg">
-                    </li>
-                    <li class="section-faq-item" tabindex="0">
-                        <small class="section-faq-text">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</small>
-                        <img src="/img/faq svg.svg" alt="button details" class="faq-svg">
-                    </li>
-                    <li class="section-faq-item" role="listitem" tabindex="0">
-                        <small class="section-faq-text">Я выбираю между разными компаниями. В чём ваше отличие?</small>
-                        <img src="/img/faq svg.svg" alt="button details" class="faq-svg">
-                    </li>
-                    <li class="section-faq-item" role="listitem" tabindex="0">
-                        <small class="section-faq-text">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</small>
-                        <img src="/img/faq svg.svg" alt="button details" class="faq-svg">
-                    </li>
-                    <li class="section-faq-item" role="listitem" tabindex="0">
-                        <small class="section-faq-text">Могу ли я вернуть деньги на каком-либо из этапов работ?</small>
-                        <img src="/img/faq svg.svg" alt="button details" class="faq-svg">
-                    </li>
-                </ul>
-            </div>
-        </section> -->
 
         <section class="section-faq">
             <div class="container">
