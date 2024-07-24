@@ -20,17 +20,42 @@
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 
     <link rel="stylesheet" href="/css/styles.css">
-  
+    <script src="/initial.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
-            <div class="burger" tabindex="0" aria-label="burger-menu">
+            <div id="burger" class="burger" tabindex="0" aria-label="burger-menu">
                 <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="30" height="3" fill="black"/>
                     <rect y="10" width="30" height="3" fill="black"/>
                     <rect y="20" width="30" height="3" fill="black"/>
                 </svg>                    
+            </div>
+            <div id="menu" class="menu is-active">
+                <div id="burger-hidden" class="burger-hidden" tabindex="0" aria-label="burger-hidden">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+                    </svg>                  
+                </div>
+                <ul class="burger-list">
+                    <li class="header-item">
+                        <a href="" class="header-item-link">О нас</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-item-link">Проэкты</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-item-link">Этапы</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-item-link">Отзывы</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-item-link">Контакты</a>
+                    </li>
+                </ul>
             </div>
             <a href="" class="header-logo" aria-label="logo" tabindex="0">
                 <svg width="39" height="72" viewBox="0 0 39 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -440,8 +465,5 @@
             </div>
         </footer>
     </main>
-
-    <script src="/initial.js"></script>
-
 </body>
 </html>
